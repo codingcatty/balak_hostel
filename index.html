@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balak Hostel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo"><i class="fas fa-hotel"></i> Balak Hostel</div>
+      <nav class="menu">
+        <ul class="nav-list">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#rooms"><i class="fas fa-bed"></i> Rooms</a>
+          </li>
+          <li class="dropdown">
+            <a href="#services" class="dropbtn"
+              ><i class="fas fa-concierge-bell"></i> Services</a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="#meals">Meals</a></li>
+              <li><a href="#payments">Payments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content slide-in">
+        <h1>Welcome to <span>Balak Hostel</span></h1>
+        <p>
+          Your comfort is our priority — Experience a safe, clean, and homely
+          stay.
+        </p>
+        <a href="#contact" class="btn">
+          <i class="fas fa-phone-alt"></i> Get in Touch
+        </a>
+        <div id="hero-clock" class="hero-clock"></div>
+      </div>
+    </section>
+
+    <!-- Rooms Gallery -->
+    <section class="room-gallery" id="rooms">
+      <h2 class="section-title fade-in">Our Rooms</h2>
+      <div>
+        <input
+          type="text"
+          id="roomFilter"
+          placeholder="Search Rooms..."
+          style="margin: 1rem auto; display: block; padding: 0.5rem"
+        />
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-item zoom-in">
+          <img
+            src="https://metrocityliving.com/wp-content/uploads/2024/06/metrocity-bhelke-nagar-page-banner-6-1024x768.jpg"
+          />
+          <h3>Single Room</h3>
+          <p>Cozy space with all basic amenities and a study table.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+        <div class="gallery-item zoom-in">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNpdetqx2Zd4nkCtIlQ8wxfk1ShIRBqGpqg&s"
+          />
+          <h3>Double Room</h3>
+          <p>Spacious and comfortable shared room with high-speed Wi-Fi.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+        <div class="gallery-item zoom-in">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzhC5BGrYgLOqRW-k5eNEXyd7tgOJ10phAQw&s"
+          />
+          <h3>Deluxe Room</h3>
+          <p>Premium setup with wardrobe, private balcony and A/C.</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="features" id="services">
+      <h2 class="section-title fade-in">Our Services</h2>
+      <div class="tab-buttons">
+        <button data-tab="meals">Meals</button>
+        <button data-tab="payments">Payments</button>
+      </div>
+      <div class="feature-container">
+        <div class="feature-box zoom-in" id="meals">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3e45TZZ0B2SoMIAu5eJi-jI6mpC5XSZAC-w&s"
+            alt="Meal Icon"
+            class="icon-img"
+          />
+          <h3><i class="fas fa-utensils"></i> Healthy Meals</h3>
+          <p>
+            Fresh and hygienic meals prepared daily with balanced nutrition and
+            taste.
+          </p>
+        </div>
+        <div class="feature-box zoom-in" id="payments">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/012/817/746/non_2x/online-payment-icon-style-vector.jpg"
+            alt="Payment Icon"
+            class="icon-img"
+          />
+          <h3><i class="fas fa-credit-card"></i> Easy Payments</h3>
+          <p>
+            Multiple secure online payment methods available for convenience and
+            safety.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">
+        <i class="fas fa-address-book"></i> Contact Us
+      </h2>
+      <div class="contact-details">
+        <p>
+          <i class="fas fa-envelope"></i> Email:
+          <a href="mailto:contact@balakhostel.com">contact@balakhostel.com</a>
+        </p>
+        <p>
+          <i class="fas fa-phone"></i> Phone:
+          <a href="tel:+919999999999">+91-12344-3455</a>
+        </p>
+        <p>
+          <i class="fab fa-facebook"></i> <a href="#">Facebook</a> |
+          <i class="fab fa-instagram"></i> <a href="#">Instagram</a> |
+          <i class="fab fa-twitter"></i> <a href="#">Twitter</a>
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form>
+        <h3>Contact Form</h3>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <span id="email-error"></span><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+        <span id="password-error"></span><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 <strong>Balak Hostel</strong>. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#home" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
